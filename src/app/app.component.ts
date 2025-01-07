@@ -1,5 +1,5 @@
 import { Component, contentChild, Inject, OnInit, PLATFORM_ID } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -8,7 +8,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { fromEvent, map } from 'rxjs';
 import { DOCUMENT, isPlatformBrowser } from '@angular/common';
+import { MatListModule } from '@angular/material/list';
 import { ButtonsIconComponent } from './buttons-icon/buttons-icon.component';
+import { FormFieldInputComponent } from './form-field-input/form-field-input.component';
 
 
 export const SCROLL_CONTAINER = 'mat-sidenav-content';
@@ -25,7 +27,11 @@ export const SHADOW_LIMIT = 100;
     MatButtonModule,
     MatIconModule,
     MatSidenavModule,
-    ButtonsIconComponent],
+    MatListModule,
+    RouterModule
+    //  ButtonsIconComponent,
+    //FormFieldInputComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -68,5 +74,6 @@ export class AppComponent implements OnInit {
   get sidenavMode() {
     return this.isSmallScren ? 'over' : 'side';
   }
+
 
 }
