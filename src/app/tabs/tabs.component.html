@@ -1,0 +1,101 @@
+<h1>Simple Tabs</h1>
+
+
+<mat-tab-group mat-align-tabs="start">
+    <mat-tab label="Tab Name">Content</mat-tab>
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="tab-icon">
+                settings
+            </mat-icon>
+            Settings
+        </ng-template>
+    </mat-tab>
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="tab-icon">
+                person
+            </mat-icon>
+            Person
+        </ng-template>
+    </mat-tab>
+</mat-tab-group>
+
+<br>
+<br>
+
+<h1>Tabs - Stretch and Bellow</h1>
+
+<mat-tab-group mat-align-tabs="start" mat-stretch-tabs="false" class="mat-elevation-z4" headerPosition="below">
+    <mat-tab label="Tab Name">Content</mat-tab>
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="tab-icon">
+                settings
+            </mat-icon>
+            Settings
+        </ng-template>
+    </mat-tab>
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="tab-icon">
+                person
+            </mat-icon>
+            Person
+        </ng-template>
+    </mat-tab>
+</mat-tab-group>
+
+<br>
+<br>
+
+<h1>Tabs -Color</h1>
+
+<mat-tab-group mat-align-tabs="start" color="warn" backgroundColor="primary" class="mat-elevation-z4"
+    headerPosition="below">
+    <mat-tab label="Tab Name">Content</mat-tab>
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="tab-icon">
+                settings
+            </mat-icon>
+            Settings
+        </ng-template>
+        <div class="mat-tab">
+            <ng-template mat-tab-label>
+                <mat-icon class="tab-icon">
+                    person
+                </mat-icon>
+                Person
+            </ng-template>
+            <h1>Settings</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consectetur nostrum ipsa quibusdam
+                soluta cumque, incidunt reprehenderit aperiam numquam magni, ratione suscipit eaque quas quis et tenetur
+                quisquam. Aliquid, maiores!
+            </p>
+        </div>
+    </mat-tab>
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="tab-icon">
+                person
+            </mat-icon>
+            Person
+        </ng-template>
+        <div class="mat-tab">
+            <ng-template mat-tab-label>
+                <mat-icon class="tab-icon">
+                    person
+                </mat-icon>
+                Person
+            </ng-template>
+            <h1>Person</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consectetur nostrum ipsa quibusdam
+                soluta cumque, incidunt reprehenderit aperiam numquam magni, ratione suscipit eaque quas quis et tenetur
+                quisquam. Aliquid, maiores!
+            </p>
+        </div>
+    </mat-tab>
+</mat-tab-group>
