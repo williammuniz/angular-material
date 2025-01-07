@@ -4,6 +4,7 @@
     <mat-nav-list>
       <a mat-list-item [routerLink]="['/buttonIcon']">Button Icon</a>
       <a mat-list-item [routerLink]="['/formFieldInput']">Form Field Input</a>
+      <a mat-list-item [routerLink]="['/progsBarSpinner']">Progress and Spinner</a>
 
     </mat-nav-list>
   </mat-sidenav>
@@ -29,8 +30,9 @@
       <span>My App</span>
       }
     </mat-toolbar>
-
-    <router-outlet></router-outlet>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
 
 
   </mat-sidenav-content>
