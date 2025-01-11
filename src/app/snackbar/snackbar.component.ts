@@ -5,7 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-snackbar',
-  imports: [MatSnackBarModule, MatIconModule, MatButtonModule, SnackbarComponent],
+  imports: [MatSnackBarModule, MatIconModule, MatButtonModule],
   templateUrl: './snackbar.component.html',
   styleUrl: './snackbar.component.scss'
 })

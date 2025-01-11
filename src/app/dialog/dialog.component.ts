@@ -12,14 +12,22 @@ import { DialogModalComponent } from './dialog-modal/dialog-modal.component';
   styleUrl: './dialog.component.scss'
 })
 export class DialogComponent {
+  public message = '';
 
   constructor(public dialog: MatDialog) {
 
   }
 
   openDialog() {
-    console.log('open dialog');
-    this.dialog.open(DialogModalComponent);
+    const dialogRef = this.dialog.open(DialogModalComponent, {
+      data: "Tricolor",
+      enterAnimationDuration: '1000ms',
+      exitAnimationDuration: '1000ms',
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      this.message = result !== undefined ? result : '';
+    });
   }
 
 }

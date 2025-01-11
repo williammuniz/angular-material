@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
 import { MatButton } from '@angular/material/button';
-import { MatDialogRef, MatDialogModule } from '@angular/material/dialog';
+import { MatDialogRef, MatDialogModule, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 
 
@@ -15,10 +15,14 @@ import { MatDialogRef, MatDialogModule } from '@angular/material/dialog';
 })
 export class DialogModalComponent {
 
-  constructor(public matDialogRef: MatDialogRef<DialogModalComponent>) { }
+
+  constructor(public matDialogRef: MatDialogRef<DialogModalComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: string
+
+  ) { }
 
 
   closeDialog() {
-    this.matDialogRef.close();
+    this.matDialogRef.close('Returned Tricolor');
   }
 }
