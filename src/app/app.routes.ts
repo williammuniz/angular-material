@@ -5,6 +5,7 @@ import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.co
 import { TabsComponent } from './tabs/tabs.component';
 import { DatepikerComponent } from './datepiker/datepiker.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
+import { DialogComponent } from './dialog/dialog.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'buttonIcon', pathMatch: 'full' },
@@ -14,5 +15,5 @@ export const routes: Routes = [
     { path: 'tabs', component: TabsComponent },
     { path: 'datePiker', component: DatepikerComponent },
     { path: 'snackbar', component: SnackbarComponent },
-
+    { path: 'dialog', component: DialogComponent },
 ];
