@@ -4,6 +4,7 @@ import { FormFieldInputComponent } from './form-field-input/form-field-input.com
 import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { DatepikerComponent } from './datepiker/datepiker.component';
+import { SnackbarComponent } from './snackbar/snackbar.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'buttonIcon', pathMatch: 'full' },
@@ -12,6 +13,6 @@ export const routes: Routes = [
     { path: 'progsBarSpinner', component: ProgressSpinnerComponent },
     { path: 'tabs', component: TabsComponent },
     { path: 'datePiker', component: DatepikerComponent },
-
+    { path: 'snackbar', component: SnackbarComponent },
 
 ];
